@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from ..model.NeuralNetworks import NeuralNetworks
-from ..config.config import model_save_path
+from ..config.config import model_save_path, model_save_path4
 from ..model.utils import save_model_params
 
 import os
@@ -39,7 +39,7 @@ def train_cnn_model(X_train, y_train, X_test, y_test, input_shape, num_classes, 
     Melakukan training
     '''
     losses = model.train(X_train, y_train, kernel=kernel, epochs=epochs, batch_size=batch_size, learning_rate=0.01)
-    model.save_model_params(model_save_path)
+    model.save_model_params(model_save_path4)
     
     '''
     Mneghitung akurasi dari model
