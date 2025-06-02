@@ -1,0 +1,109 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #e0f2f7, #ffffff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 0; /* Menambahkan padding atas dan bawah pada body */
+}
+
+.header {
+    background-color: #0d47a1; /* Biru tua */
+    color: white;
+    padding: 15px 0;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 8px rgba(0,0,0.4,0.4);
+    border-radius: 15px;
+
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 4em;
+    font-weight: bold;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.detection-box {
+    background-color: #1976d2; 
+    padding: 40px; 
+    border-radius: 20px; 
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px; 
+    max-width: 90%; 
+    margin-bottom: 70px;
+}
+
+.image-placeholder {
+    background-color: white;
+    width: 100%;
+    /* height: 250px; */ /* Tinggi sebelumnya */
+    height: 300px; /* Tinggi placeholder gambar diperbesar */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px; /* Jarak bawah sedikit ditambah */
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #bbdefb;
+}
+
+.upload-label {
+    cursor: pointer;
+    font-size: 1.5em; /* Sedikit diperbesar */
+    color: #000000;
+}
+
+#uploadedImage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.result-display {
+    background-color: white;
+    width: 85%; /* Lebar disesuaikan dengan box yang lebih besar */
+    padding: 18px; /* Padding sedikit ditambah */
+    border-radius: 8px;
+    margin-bottom: 25px; /* Jarak bawah sedikit ditambah */
+    min-height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1em; /* Ukuran font hasil sedikit diperbesar */
+    color: #333;
+    border: 1px solid #bbdefb;
+}
+
+#detectButton {
+    background-color: #e0e0e0;
+    color: #000000;
+    border: none;
+    padding: 12px 25px; /* Padding tombol sedikit diperbesar */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em; /* Ukuran font tombol sedikit diperbesar */
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+#detectButton:hover {
+    background-color: #bdbdbd;
+}
