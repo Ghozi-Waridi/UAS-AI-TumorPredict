@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deteksi Tumor Otak</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #003366, #005b99);
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            padding: 0 10%;
+        }
+
+        .text-section {
+            max-width: 50%;
+        }
+
+        .text-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .text-section p {
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .text-section button {
+            background-color: white;
+            color: #005b99;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .text-section button:hover {
+            background-color: #e6e6e6;
+        }
+
+        .image-section img {
+            max-height: 80%;
+            max-width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-section">
+            <h1>SELAMAT DATANG DI SISTEM<br>DETEKSI TUMOR OTAK</h1>
+            <p>
+                Tumor otak adalah penyakit yang dapat berubah menjadi kanker dan bisa menyebabkan kematian, dikarenakan otak termasuk organ vital tubuh manusia yang bertanggung jawab untuk mengendalikan seluruh fungsi tubuh manusia. Pencitraan medis saat ini sudah memiliki sistem MRI untuk mendeteksi tumor otak yang memudahkan para dokter dalam diagnosa. Sistem yang kami kembangkan menggunakan Convolutional Neural Networks (CNN) untuk meningkatkan akurasi dalam mendeteksi dan mengklasifikasikan tumor otak dari citra MRI secara otomatis dan efisien.
+            </p>
+            <button>PELAJARI SELENGKAPNYA</button>
+        </div>
+        <div class="image-section">
+            <img src="brain_tumor_image.png" alt="Ilustrasi Tumor Otak">
+        </div>
+    </div>
+</body>
+</html>

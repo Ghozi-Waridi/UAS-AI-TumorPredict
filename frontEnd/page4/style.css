@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-panel {
+  background-color: #083d6b;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  gap: 300px;
+}
+
+.images {
+  display: flex;
+  gap: 500px;
+}
+
+.images img {
+  width: 750px;
+  height: 750px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.folders-img img {
+  width: 900px; 
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid white;
+}
+
+.right-panel {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  background-color: #f8f8f8;
+  padding: 300px;
+  font-weight: bold;
+  font-size: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

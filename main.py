@@ -1,6 +1,6 @@
 from sklearn.metrics import classification_report, confusion_matrix
 
-from config.config import *
+from config.config import model_save_path3, image_size, dataset_path, model_save_path, model_save_path4
 from data.dataset_loader import load_data
 from data.preprocess import preprocess_data
 from data.visualize import visualize_samples
@@ -11,6 +11,11 @@ from utils.helpers import create_gaussian_kernel
 from model.NeuralNetworks import NeuralNetworks
 
 
+import os
+import sys
+
+# Tambahkan jalur root project secara manual
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 
 
@@ -35,13 +40,13 @@ if __name__ == "__main__":
     '''
     Tinggal mengubah parameter di bagian evalute file testing eval
     '''
-    # model.evaluate(x=X_test, y=y_test, classes=classes)
-    # model.train(X_train, y_train, kernel=kernel, epochs=10, batch_size=32)
 
+    model.train(X_train, y_train, kernel=kernel, epochs=10, batch_size=32)
+    model.evaluate(x=X_test, y=y_test, classes=classes)
 
-    # import os
-    # sample_image_path = os.path.join(dataset_path, classes[0], os.listdir(os.path.join(dataset_path, classes[0]))[0])
-    # print(sample_image_path)
-    #
-    # pred = predict_single_image(model, sample_image_path, image_size=image_size, label_encoder=label_encoder)
-    # print(f"Prediction result: {pred}")
+    import os
+    sample_image_path = os.path.join(dataset_path, classes[0], os.listdir(os.path.join(dataset_path, classes[0]))[0])
+    print(sample_image_path)
+
+    pred = predict_single_image(model, sample_image_path, image_size=image_size, label_encoder=label_encoder)
+    print(f"Prediction result: {pred}")

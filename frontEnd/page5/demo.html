@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deteksi Kanker Otak</title>
+    <link rel="stylesheet" href="styledemo.css">
+</head>
+<body>
+    <div class="header">
+        <h1>DEMO INTERAKSI</h1>
+    </div>
+    <div class="container">
+        <div class="detection-box">
+            <div class="image-placeholder" id="imagePlaceholder">
+                <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+                <label for="imageUpload" class="upload-label">Pilih Gambar +</label>
+                <img id="uploadedImage" src="#" alt="Gambar Unggahan" style="display: none;"/>
+            </div>
+            <div class="result-display" id="resultDisplay">
+                </div>
+            <button id="detectButton">Deteksi sekarang</button>
+        </div>
+    </div>
+    <script src="scriptdemo.js"></script>
+</body>
+</html>
